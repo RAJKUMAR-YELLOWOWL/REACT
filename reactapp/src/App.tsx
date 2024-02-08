@@ -4,13 +4,33 @@ import './App.css';
 
 function App() {
   return (
+    
     <div className="App">
-     <label htmlFor="">Id: </label>
-          <input type="text" /><br/><br/>
-          <label htmlFor="">Name: </label>
-          <input type="text" /><br/><br/>
-          <label htmlFor="">Phone: </label>
-          <input type="number" /><br/><br/>
+      <div className="navigation">
+        <div>whatsapp</div>
+        <div>Privacy</div>
+        <div>For Business</div>
+        <div>whatsapp Web</div>
+        <div>Download</div>
+        <div>Download</div>
+      </div>   
+      <div className='first'>
+         <div className='first1'>
+             <h1>Download for windows</h1>
+             <p>use whatsapp access your devices</p>
+         </div>
+         <div className='first2'>
+             <h1>Download for linux</h1>
+             <p>use whatsapp to access your devices</p>
+         </div>
+      </div>
+      <div className="mid">
+        <button>submit</button>
+      </div>
+      <div className='end'>
+
+      </div>
+  
     </div>
   );
 }
