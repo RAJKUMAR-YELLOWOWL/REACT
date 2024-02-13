@@ -1,0 +1,47 @@
+.FlexView {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color: aqua;
+    flex-direction: column;
+  }
+  
+  .navigation{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    height: 10vh;
+    font-size: larger;
+    background-color: rgb(175, 240, 191);
+  }
+  
+  .first { 
+    display: flex;
+    flex:1;
+    /* height: 80vh; */
+    background-color: rgb(129, 204, 148);
+    flex-direction: row;
+    align-items: center;
+  }
+  .first1{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  .first2{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .mid {
+    background-color: rgb(106, 206, 106);
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  
+  

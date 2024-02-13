@@ -1,38 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Create from './Components/Create';
+import Read from './Components/Read';
+import Update from './Components/Update'
+import Delete from './Components/Delete'
+import FlexView from './Components/FlexView';
+import GridView from './Components/GridView';
 
-function App() {
-  return (
-    
-    <div className="App">
-      <div className="navigation">
-        <div>whatsapp</div>
-        <div>Privacy</div>
-        <div>For Business</div>
-        <div>whatsapp Web</div>
-        <div>Download</div>
-        <div>Download</div>
-      </div>   
-      <div className='first'>
-         <div className='first1'>
-             <h1>Download for windows</h1>
-             <p>use whatsapp access your devices</p>
-         </div>
-         <div className='first2'>
-             <h1>Download for linux</h1>
-             <p>use whatsapp to access your devices</p>
-         </div>
+const App = () =>{
+  return(
+    <Router>
+      <div>
+        <Routes>
+          <Route path="/" element={<Create/>}></Route> 
+          <Route path="/read" element={<Read/>} />
+          <Route path="/update" element={<Update/>} />
+          <Route path="/delete" element={<Delete/>} />
+          <Route path="/GridView" element={<GridView/>} />
+          <Route path="/FlexView" element={<FlexView/>}/>
+        </Routes>
       </div>
-      <div className="mid">
-        <button>submit</button>
-      </div>
-      <div className='end'>
-
-      </div>
-  
-    </div>
-  );
+    </Router>
+  )
 }
 
 export default App;
